@@ -7,21 +7,24 @@
         <link rel="icon" type="image/svg+xml" href="./Media/favicon.svg" />
         <link rel="stylesheet" href="./CSS/Style.css">
         <link rel="stylesheet" href="./CSS/Programming-style.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     </head>
-    <body>
+    <body class="spanish">
         <video autoplay muted loop="loop" id="video_background" preload="auto">
             <source src="./Media/BG.mp4" type="video/mp4" />
         </video>
-        <h1 data-text="Programación" class="glitch">Programación</h1>
+        <div id="glitch">
+            <h1 data-text="Programación" class="glitch">Programación</h1>
+        </div>
         <nav class="menu">
             <ol>
-                <li class="menu-item"><a href="./index.html">Inicio</a></li>
-                <li class="menu-item"><a href="./Programacion.html">Programacion</a></li>
-                <li class="menu-item"><a href="./Dibujo.html">Dibujo</a></li>
+                <li class="menu-item"><a href="./index.html" id="nav1">Inicio</a></li>
+                <li class="menu-item"><a href="./Programacion.html" id="nav2">Programacion</a></li>
+                <li class="menu-item"><a href="./Dibujo.html" id="nav3">Dibujo</a></li>
             </ol>
         </nav>
-        <center><div class="titleP">¿Qué tipo de cosas he hecho?</div></center>
-        <div class="infoSpace">He hecho cosas bastante variadas, pero debido a que mi especialización es JavaScript he trabajado mucho más en esa área, aunque también me llama mucho la atención el diseño como un medio de hacer las páginas atractivas. <br><br>
+        <div class="titleP" id="titleP">¿Qué tipo de cosas he hecho?</div>
+        <div class="infoSpace" id="infoSpace">He hecho cosas bastante variadas, pero debido a que mi especialización es JavaScript he trabajado mucho más en esa área, aunque también me llama mucho la atención el diseño como un medio de hacer las páginas atractivas. <br><br>
         Pero para mencionar algunas cosas podría decir que he trabajado en:
             <ul>
                 <li>Páginas personales (como esta)</li>
@@ -32,11 +35,11 @@
             </ul>
         Entre otros.
         </div>
-        <center><div class="titleP">Ejemplos de páginas</div></center>
-        <div class="infoSpace" style="text-align: center;">
+        <div class="titleP" id="titleP2">Ejemplos de páginas</div>
+        <div class="infoSpace" id="infoSpace2" style="text-align: center;">
             <span style="text-align: center;">Estos son algunos ejemplo que puedo mostrar:</span> <br><br>
             <iframe class="iFrame" src="./Sucesion geometrica.html" title="Iframe Example"></iframe><br>
-            Esta página la creé con el fin de expresar temas matemáticos con JavaScript, por alguna razón se me facilitaba más expresarlo y hacerlo con programación. <br><br>
+            Esta página la creé con el fin de expresar temas matemáticos con JavaScript, por alguna razón se me facilitaba más hacerlo con programación. <br><br>
             <iframe class="iFrame" src="./Case.html" title="Iframe Example"></iframe><br>
             Esta surgió a partir de una actividad, en esta se nos pedía identificar si el texto ingresado estaba en mayúsculas o minúsculas; al final quise hacer más que eso y añadí el código para reconocer otros elementos. <br><br>
             <iframe class="iFrame" src="https://mauriceaquino.github.io/Proyecto-5/" title="Iframe Example"></iframe><br>
@@ -49,8 +52,49 @@
             ¡Los invito a ver la área de dibujos y el inicio! <br>
             Espero disfruten su visita.
         </div>
+        <div class="bottom-right">								
+            <div class="switch">
+                <div class="circle"></div>
+            </div>									
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+            <script>
+                $(".switch").on('click', function () {
+                    if ($("body").hasClass("spanish")) {
+                        $(".switch").addClass("switched");
+                        $("body").removeClass("spanish");
+                        $("body").addClass("english");
+                        $("title").html("Programming");
+                        $("#glitch").html("<h1 data-text='Programming' class='glitch'>Programming</h1>");
+                        $("#nav1").html("Introduction");
+                        $("#nav2").html("Programming");
+                        $("#nav3").html("Drawings");
+                        $("#titleP").html("What kind of things have I done?");
+                        $("#infoSpace").html("I have done several different things, but due to the fact that my specialization is JavaScript, I have worked much more in that area, though, I also like a lot the design as a way to make the web pages more attractive. <br><br>But to mention some things, I have worked in these:<ul><li>Personal webpages (like this one)</li><li>Sign up forms</li><li>Local business webpages</li><li>Webpages to practice English</li><li>Specialized calculators</li></ul>And some others.");
+                        $("#titleP2").html("Webpages examples");
+                        $("#infoSpace2").html('<span style="text-align: center;">These are some examples I can show:</span> <br><br><iframe class="iFrame" src="./Sucesion geometrica.html" title="Iframe Example"></iframe><br>I created this webpage as a way of expressing some math topics with JavaScript, for some reason, it was much easier to do it this way. <br><br><iframe class="iFrame" src="./Case.html" title="Iframe Example"></iframe><br>This one came up from an activity, in this activity, we were asked to identify if the text was in uppercase or in lowercase; at the end I wanted to make something else, which is why I added some code to identify some other elements. <br><br><iframe class="iFrame" src="https://mauriceaquino.github.io/Proyecto-5/" title="Iframe Example"></iframe><br>This sign up form was an activity I did along with Rocío Palacios, we were asked to validate some data from a form, at the end we added a bit of CSS. <br><br><iframe class="iFrame" src="https://mauriceaquino.github.io/INDUSAL" title="Iframe Example"></iframe><br>I consider this as one of the biggest projects I have worked in, it consisted of making a webpage for a local business. I worked with Rocío Palacios, Rudy García and Valeria Elías. <br><br><iframe class="iFrame" src="https://mauriceaquino.github.io/MTA-Countdown/" title="Iframe Example"></iframe><br>This is the project I recently worked in, I worked with Rudy García. It came up with the idea of making a countdown for the certification we were going to have at that time, little by little we added some colors and special designs. <br><br><br><br>And here is the little showcase of my experience working with webpages. <br>I invite you to check my drawings and the introduction as well! <br>I hope you can enjoy your visit!.')                        
+                    }
+                    else {
+                        $("body").addClass("spanish");
+                        $(".switch").removeClass("switched");
+                        $("body").removeClass("english");
+                        $("title").html("Programación");
+                        $("#glitch").html("<h1 data-text='Programación' class='glitch'>Programación</h1>");
+                        $("#nav1").html("Inicio");
+                        $("#nav2").html("Programación");
+                        $("#nav3").html("Dibujos");
+                        $("#titleP").html("¿Qué tipo de cosas he hecho?");
+                        $("#infoSpace").html("He hecho cosas bastante variadas, pero debido a que mi especialización es JavaScript, he trabajado mucho más en esa área, aunque también me llama mucho la atención el diseño como un medio de hacer las páginas atractivas. <br><br>Pero para mencionar algunas cosas podría decir que he trabajado en:<ul><li>Páginas personales (como esta)</li><li>Formularios de registro</li><li>Página para un negocio</li><li>Página de apoyo para prácticar el idioma Ingles</li><li>Calculadoras especiales</li></ul>Entre otros.");
+                        $("#titleP2").html("Ejemplos de páginas");
+                        $("#infoSpace2").html('<span style="text-align: center;">Estos son algunos ejemplo que puedo mostrar:</span> <br><br><iframe class="iFrame" src="./Sucesion geometrica.html" title="Iframe Example"></iframe><br>Esta página la creé con el fin de expresar temas matemáticos con JavaScript, por alguna razón se me facilitaba más hacerlo con programación. <br><br><iframe class="iFrame" src="./Case.html" title="Iframe Example"></iframe><br>Esta surgió a partir de una actividad, en esta se nos pedía identificar si el texto ingresado estaba en mayúsculas o minúsculas; al final quise hacer más que eso y añadí el código para reconocer otros elementos. <br><br><iframe class="iFrame" src="https://mauriceaquino.github.io/Proyecto-5/" title="Iframe Example"></iframe><br>Este formulario de registro fue una actividad que hice con Rocío Palacios, se nos pedía validar los datos de un formulario, solo que agregamos un poco de CSS. <br><br><iframe class="iFrame" src="https://mauriceaquino.github.io/INDUSAL" title="Iframe Example"></iframe><br>Considero que este ha sido uno de los mayores proyectos en los que he trabajado, consistió en generar una página web para un negocio. Trabaje con Rocío Palacios, Rudy García y Valeria Elías. <br><br><iframe class="iFrame" src="https://mauriceaquino.github.io/MTA-Countdown/" title="Iframe Example"></iframe><br>Este es el proyecto más reciente, en este trabaje con Rudy García. Surgió como una idea de hacer un contador haciá atrás previo a nuestra certificación, poco a poco le agregamos colores y diseños especiales. <br><br><br><br>Hasta aquí una pequeña muestra de mi experiencia haciendo páginas web. <br>¡Los invito a ver la área de dibujos y el inicio! <br>Espero disfruten su visita.')
+                    }
+                });
+            </script>
         <div class="footer">Mauricio Aquino
-            <br>Main developer © 
+            <br>Main developer © <br>
+            <a href="https://wa.me/50370005233"><img id="ws" src="./Media/Ws.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/mauricio-aquino-228a2b204"><img id="link" src="./Media/Link.png" alt=""></a>
+            <a href="mailto:mauricio.aquino2021@adoc.superate.org.sv"><img id="out" src="./Media/Out.png" alt=""></a>
         </div>
     </body>
 </html>
