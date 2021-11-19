@@ -7,17 +7,17 @@
         <link rel="icon" type="image/svg+xml" href="./Media/favicon.svg" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.js"></script>   
         <link rel="stylesheet" href="./CSS/Style.css">
         <link rel="stylesheet" href="./CSS/Dibujos-outline.css">
     </head>
-    <body>
+    <body class="spanish">
         <p class="draw">Dibujos</p> 
         <nav class="menu">
             <ol>
-                <li class="menu-item"><a href="./index.html">Inicio</a></li>
-                <li class="menu-item"><a href="./Programacion.html">Programacion</a></li>
-                <li class="menu-item"><a href="./Dibujo.html">Dibujo</a></li>
+                <li class="menu-item"><a href="./index.html" id="nav1">Inicio</a></li>
+                <li class="menu-item"><a href="./Programacion.html" id="nav2">Programacion</a></li>
+                <li class="menu-item"><a href="./Dibujo.html" id="nav3">Dibujo</a></li>
             </ol>
         </nav>
         <video autoplay muted loop="loop" id="video_background" preload="auto">
@@ -25,7 +25,7 @@
         </video>
         <div class="gallery">
             <div class="row">
-                <div class="galleryTitle">¿Cómo fueron mis primeros dibujos?</div>
+                <div class="galleryTitle" id="title1">¿Cómo fueron mis primeros dibujos?</div>
                 <div class="row1">
                     <center><div
                     id="dog"
@@ -40,12 +40,12 @@
                     </div></center> 
                 </div>
                 <div class="galleryDescription row1" id="descp1">
-                    No tengo registro de mis primeros dibujos, pero si tengo este que hice hace como 4 años. <br>
+                    No tengo registro de mis primeros dibujos, pero si tengo este que hice hace como 6 años. <br>
                     Considero que es un buen ejemplo, porque fue uno de los primeros dibujos a los que les puse mucho empeño y dedicación.
                 </div>
             </div>
             <div class="row">
-                <div class="galleryTitle">Dibujos simples</div><br>
+                <div class="galleryTitle" id="title2">Dibujos simples</div><br>
                 <div class="row2" id="i1r2">
                    <center><div
                     id="tree"
@@ -91,7 +91,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="galleryTitle" id="title3">¿Hubieron mejorías?</div><br>
+                <div class="galleryTitle" id="title3" >¿Hubieron mejorías?</div><br>
                 <div class="galleryItems3 row3i1">
                     <div
                         id="wolf"
@@ -136,7 +136,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="galleryTitle">Algunos usos simples</div><br>
+                <div class="galleryTitle" id="title4">Algunos usos simples</div><br>
                 <div class="galleryItems4 row4i1">
                     <div
                         id="bear"
@@ -163,11 +163,11 @@
                         style="background-position: center;">
                     </div>
                 </div>
-                <div class="galleryDescription" id="descp4">Estos son dos pequeños ejemplos de dibujos que en ocasiones suelo hacer para unidades o pequeñas que hago por parte de mi escuela.<br>
+                <div class="galleryDescription" id="descp4">Estos son dos pequeños ejemplos de dibujos que en ocasiones suelo hacer para unidades o pequeñas tareas que hago por parte de mi escuela.<br>
                 En el caso de el dibujo de Einstein use una <a class="links" target="_blank" href="https://www.pinturayartistas.com/como-dibujar-con-cuadricula-paso-a-paso/">técnica de cuadriculado</a> para poder dibujarlo, en lo personal me parece una execelente tecnica par aprender a hacer trazos.</div>
             </div>
             <div class="row">
-                <div class="galleryTitle">Mi más reciente dibujo</div><br>
+                <div class="galleryTitle" id="title5">Mi más reciente dibujo</div><br>
                 <div class="galleryItem5 row5">
                     <div
                     id="spider-man"
@@ -181,15 +181,15 @@
                     style="background-position: center;">
                     </div>
                 </div>
-                <div class="galleryDescription row5" id="descp5">Considero este como mi más reciente dibujo, debido a que ha sido el ultimo al que le he dedicado una buena cantidad de tiempo, aunque he de decir que lo hice hace varios meses, y no termine de hacerle todos los detalles, pero me alegro el hecho de dibujar algo que era en 3D, dado que casi siempre buscaba imagenes en 2D para dibujar, por lo que dibujar este personaje. <br> Ya no he logrado hacer el suficiente tiempo como para volver a dedicarme toda una tarde a dibujar, pero en definitiva quiero hacerlo nuevamente pronto.</div>
+                <div class="galleryDescription row5" id="descp5">Considero este como mi más reciente dibujo, debido a que ha sido el ultimo al que le he dedicado una buena cantidad de tiempo, aunque he de decir que lo hice hace varios meses, y no termine de hacerle todos los detalles, pero me alegro el hecho de dibujar algo que era en 3D, dado que casi siempre buscaba imagenes en 2D para dibujar, por lo que dibujar este personaje significó un avance. <br> Ya no he logrado hacer el suficiente tiempo como para volver a dedicarme toda una tarde a dibujar, pero en definitiva quiero hacerlo nuevamente pronto.</div>
             </div>
             <div class="row">
-                <div class="galleryTitle">¿Mi mejor dibujo?</div>
+                <div class="galleryTitle" id="title6">¿Mi mejor dibujo?</div>
                 <div class="galleryDescription" style="text-align: center;">
-                    ¿Quieres ver mi mejor dibujo? 
+                    <div class="lilDescp">¿Quieres ver mi mejor dibujo? </div> 
                     <br>
                     <button id="fadeButton">Click me!</button> 
-                    <script>
+                    <!--<script>
                         $(document).ready(function(){
                         $("#fadeButton").click(function(){
                             $(".hiddenImg").fadeToggle(1000);
@@ -204,7 +204,7 @@
                             $(".story").fadeIn(500)
                         });
                         });
-                    </script>
+                    </script>-->
                 </div>
                 <div class="hiddenImg" style="display: none;">
                     <div class="galleryItems6 row6i1">
@@ -246,22 +246,97 @@
                         style="background-position: center;">
                         </div>
                     </div>
-                    <div class="galleryDescription" id="descp6">Existe toda una historia detras de este dibujo <span class="story">[...]</span><span class="storyHidden" style="display: none;"><br><br>Todo comienza un 23 de diciembre, por la noche decidí que el día siguiente me dedicaría a hacer el dibujo con más detalles de mi vida. Así empezó mi día desde muy temprano, haciendo el boceto inicial (primera imagen), y poco a poco haciendo un trabajo muy minucioso en cada parte que hacía, a eso del mediodía tome una pausa sintiéndome satisfecho de los resultados obtenidos hasta el momento (segunda imagen). Luego de eso, por la tarde continué dibujando hasta la noche, en definitiva me vi atrapado en la pasión de dibujar aquello que me había propuesto, mientras escuchaba mi música favorita. Antes de acostarme los resultados que obtuve fueron muy gratificantes (tercera imagen), pero lastimosamente no todas las historias tienen un final feliz. Algunos días después mi mamá vió el dibujo y considero que era algo diabólico, por lo que lo destruyo y desecho, fue triste en su momento, pero siempre me quedo la satisfacción de que me hubiera quedado como me quedó. <span class="close">[...]</span><br><br></span> pero la razón principal que me lleva a tomarlo como mi mejor dibujo, es la cantidad de detalles que logre hacerle y el hecho que me demostre que con tiempo y dedicación podía hacer cualquier dibujo,</div>
+                    <div class="galleryDescription" id="descp6">Existe toda una historia detras de este dibujo <span class="story">[...]</span><span class="storyHidden" style="display: none;"><br><br>Todo comienza un 23 de diciembre, por la noche decidí que el día siguiente me dedicaría a hacer el dibujo con más detalles de mi vida. Así empezó mi día desde muy temprano, haciendo el boceto inicial (primera imagen), y poco a poco haciendo un trabajo muy minucioso en cada parte que hacía, a eso del mediodía tome una pausa sintiéndome satisfecho de los resultados obtenidos hasta el momento (segunda imagen). Luego de eso, por la tarde continué dibujando hasta la noche, en definitiva me vi atrapado en la pasión de dibujar aquello que me había propuesto, mientras escuchaba mi música favorita. Antes de acostarme los resultados que obtuve fueron muy gratificantes (tercera imagen), pero lastimosamente no todas las historias tienen un final feliz. Algunos días después mi mamá vió el dibujo y considero que era algo diabólico, por lo que lo destruyo y desecho, fue triste en su momento, pero siempre me quedo la satisfacción de que me hubiera quedado como me quedó. <span class="close">[...]</span><br><br></span> pero la razón principal que me lleva a tomarlo como mi mejor dibujo, es la cantidad de detalles que logre hacerle y el hecho que me demostre que con tiempo y dedicación podía hacer cualquier dibujo.</div>
                 </div>
             </div>
+            <script>
+                $('.zoo-item').ZooMove({   
+                cursor:'false',
+                scale:'2',
+                move:'true',
+                over:'false',
+                autosize:'true'
+                });
+            </script>
+            <div class="bottom-right">								
+                <div class="switch">
+                    <div class="circle"></div>
+                </div>									
+            </div>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+                <script>
+                    $(".switch").on('click', function () {
+                        if ($("body").hasClass("spanish")) {
+                            $(".switch").addClass("switched");
+                            $("body").removeClass("spanish");
+                            $("body").addClass("english");
+                            $("title").html("Drawings");
+                            $(".draw").html("Drawings");
+                            $("#nav1").html("Introduction");
+                            $("#nav2").html("Programming");
+                            $("#nav3").html("Drawings");
+                            $("#title1").html("How were my first drawings?");
+                            $("#title2").html("Simple drawings");
+                            $("#title3").html("Was there any improvement?");
+                            $("#title4").html("Some simple uses");
+                            $("#title5").html("My latest drawing");
+                            $("#title6").html("My best drawing?");
+                            $("#descp1").html("I do not have a record of my first drawings, but I do have this one that I made like 6 years ago. <br>I consider this drawing as a good example, because it was one of the first drawings I put a lot of effort and dedication.");
+                            $("#descp2").html("These are some of the drawings that I would ocasionally do just to keep me entertained while we did not have classes (which was not a usual thing). <br>They were little works wether from my imagination (as the three) or copying some image (as in Mario or Deadpool).");
+                            $("#descp3").html("From my point of view, these are some of the drawings where I felt I was improving even though I did not have constan practices, still, there was such a long way to go, but it felt nice to have some advancements.");
+                            $("#descp4").html('These are two little examples of drawings that I ocasionally do for units or small homework assignments I do from my school. <br>In the case of the Einstein drawing I used a <a class="links" target="_blank" href="https://www.pinturayartistas.com/como-dibujar-con-cuadricula-paso-a-paso/">grid method</a> to draw it, I personally consider it as one of the best methods to learn how to do some strokes');
+                            $("#descp5").html("I consider this as my latest drawing, because it is the last one I have dedicated a good amount of time, though I might say that it was several months ago, and I did not even finish to do some of the details, but I was glad of having drawn something that was 3D, this is because I would usually just look for 2D images for me to draw them, so, drawing this character meant an improvement.<br>I have not been able to do the enough time to dedicate a whole afternoon for drawing, but definitely I want to do it again really soon.");
+                            $("#descp6").html('There is a whole story behind this drawing <span class="story">[...]</span><span class="storyHidden" style="display: none;"><br><br>It all started a 23th of december, at night I decide that the next day I would dedicate it to draw the drawing with the most amount of details in my life. That is how my day started since very early, doing the initial sketch (first picture), and little by little making a very torough job in every part I was doing, at around midday I took a pause feeling satisfied of the results obtained at that point (second picture). After that, I kept drawing all afternoon long until the night, I was definitely caught in the passion of drawing that something I wanted so much while listening to my favorite music. Before going to bed, the results were very gratifying (third picture), but unfortunately not all stories have a happy end. A few days after my mom saw the drawing and considered it as something diabolical so she destroyed it and threw it away, it was very sad at that moment, but I always had the satisfaction of knowing that it would have been as good as I wanted. <span class="close">[...]</span><br><br></span> but the main reason for me to take it as my best drawing was the amount of details I could achieve and the fact that I demonstrated myself that with time and dedication I could do any drawing.');
+                            $(".lilDescp").html("Want to see my best drawing?");
+                        }
+                        else {
+                            $("body").addClass("spanish");
+                            $(".switch").removeClass("switched");
+                            $("body").removeClass("english");
+                            $("title").html("Dibujo");
+                            $(".draw").html("Dibujos");
+                            $("#glitch").html("<h1 data-text='Programación' class='glitch'>Programación</h1>");
+                            $("#nav1").html("Inicio");
+                            $("#nav2").html("Programación");
+                            $("#nav3").html("Dibujos");
+                            $("#title1").html("¿Cómo fueron mis primeros dibujos?");
+                            $("#title2").html("Dibujos simples");
+                            $("#title3").html("¿Hubieron mejorías?");
+                            $("#title4").html("Algunos usos simples");
+                            $("#title5").html("Mi más reciente dibujo");
+                            $("#title6").html("¿Mi mejor dibujo?");
+                            $("#descp1").html("No tengo registro de mis primeros dibujos, pero si tengo este que hice hace como 6 años. <br>Considero que es un buen ejemplo, porque fue uno de los primeros dibujos a los que les puse mucho empeño y dedicación.");
+                            $("#descp2").html("Estos, son algunos de los dibujos que en ocaciones solía hacer para mantenerme entretenido cuando no teniamos clases (lo que no era muy común). <br>Eran pequeñas obras usando ya sea la imaginación (como el árbol) o copiando una imagen base (como en el caso de Mario y Deadpool).");
+                            $("#descp3").html("Desde mi punto de vista, estos son algunos dibujos donde yo sentí que estaba mejorando a pesar de no tener una constante práctica, aún me faltaba mucho, pero es muy agradable sentir que se avanza.");
+                            $("#descp4").html('Estos son dos pequeños ejemplos de dibujos que en ocasiones suelo hacer para unidades o pequeñas tareas que hago por parte de mi escuela.<br>En el caso de el dibujo de Einstein use una <a class="links" target="_blank" href="https://www.pinturayartistas.com/como-dibujar-con-cuadricula-paso-a-paso/">técnica de cuadriculado</a> para poder dibujarlo, en lo personal me parece una execelente tecnica par aprender a hacer trazos.');
+                            $("#descp5").html("Considero este como mi más reciente dibujo, debido a que ha sido el ultimo al que le he dedicado una buena cantidad de tiempo, aunque he de decir que lo hice hace varios meses, y no termine de hacerle todos los detalles, pero me alegro el hecho de dibujar algo que era en 3D, dado que casi siempre buscaba imagenes en 2D para dibujar, por lo que dibujar este personaje significó un avance. <br> Ya no he logrado hacer el suficiente tiempo como para volver a dedicarme toda una tarde a dibujar, pero en definitiva quiero hacerlo nuevamente pronto.");
+                            $("#descp6").html('Existe toda una historia detras de este dibujo <span class="story">[...]</span><span class="storyHidden" style="display: none;"><br><br>Todo comienza un 23 de diciembre, por la noche decidí que el día siguiente me dedicaría a hacer el dibujo con más detalles de mi vida. Así empezó mi día desde muy temprano, haciendo el boceto inicial (primera imagen), y poco a poco haciendo un trabajo muy minucioso en cada parte que hacía, a eso del mediodía tome una pausa sintiéndome satisfecho de los resultados obtenidos hasta el momento (segunda imagen). Luego de eso, por la tarde continué dibujando hasta la noche, en definitiva me vi atrapado en la pasión de dibujar aquello que me había propuesto, mientras escuchaba mi música favorita. Antes de acostarme los resultados que obtuve fueron muy gratificantes (tercera imagen), pero lastimosamente no todas las historias tienen un final feliz. Algunos días después mi mamá vió el dibujo y considero que era algo diabólico, por lo que lo destruyo y desecho, fue triste en su momento, pero siempre me quedo la satisfacción de que me hubiera quedado como me quedó. <span class="close">[...]</span><br><br></span> pero la razón principal que me lleva a tomarlo como mi mejor dibujo, es la cantidad de detalles que logre hacerle y el hecho que me demostre que con tiempo y dedicación podía hacer cualquier dibujo.');
+                            $(".lilDescp").html("¿Quieres ver mi mejor dibujo?");
+                        }
+                    });
+                </script>
+                <script>
+                    $(document).ready(function(){
+                    $("#fadeButton").click(function(){
+                        $(".hiddenImg").fadeToggle(1000);
+                        $("#fadeButton").fadeToggle(1000)
+                    });
+                    $(".story").click(function(){
+                        $(".storyHidden").fadeIn(500);
+                        $(".story").fadeOut(500)
+                    });
+                    $(".close").click(function(){
+                        $(".storyHidden").fadeOut(500);
+                        $(".story").fadeIn(500)
+                    });
+                    });
+                </script>
             <div class="footer">Mauricio Aquino
-                <br>Main developer © 
+                <br>Main developer © <br>
+                <a href="https://wa.me/50370005233"><img id="ws" src="./Media/Ws.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/mauricio-aquino-228a2b204"><img id="link" src="./Media/Link.png" alt=""></a>
+                <a href="mailto:mauricio.aquino2021@adoc.superate.org.sv"><img id="out" src="./Media/Out.png" alt=""></a>
             </div>
         </div>
-        
-        <script>
-            $('.zoo-item').ZooMove({   
-            cursor:'false',
-            scale:'2',
-            move:'true',
-            over:'false',
-            autosize:'true'
-            });
-        </script>
     </body>
 </html>
