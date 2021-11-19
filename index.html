@@ -7,6 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.js"></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
         <link rel="icon" type="image/svg+xml" href="./Media/favicon.svg" />
         <link rel="stylesheet" href="./CSS/Style.css">
         <style>
@@ -22,13 +23,13 @@
             }
         </style>
     </head>
-    <body>
+    <body class="spanish">
         <h1 class="rainbow"> Maurice </h1>
         <nav class="menu">
             <ol>
-                <li class="menu-item"><a href="./index.html">Inicio</a></li>
-                <li class="menu-item"><a href="./Programacion.html">Programacion</a></li>
-                <li class="menu-item"><a href="./Dibujo.html">Dibujo</a></li>     
+                <li class="menu-item"><a href="./index.html" id="nav1">Inicio</a></li>
+                <li class="menu-item"><a href="./Programacion.html" id="nav2">Programacion</a></li>
+                <li class="menu-item"><a href="./Dibujo.html" id="nav3">Dibujo</a></li>     
             </ol>
         </nav>
         <video autoplay muted loop="loop" id="video_background" preload="auto">
@@ -36,7 +37,7 @@
         </video>
         <div
             class="zoo-item"
-            data-zoo-image="./Media/Photo.JPG"
+            data-zoo-image="./Media/Photo.jpg"
             data-zoo-scale="1.1"
             data-zoo-move="false"
             data-zoo-over="true"
@@ -52,39 +53,261 @@
         <div class="space1"></div>
         <div class="cards">
             <div class="cardTitles">¿Qué intereses tengo?</div>
-            <div class="left-images1 column">
-                <img class="zooImg" src="./Media/s1.jpeg" alt="Programación">
-                <img class="zooImg" src="./Media/s3.jpeg" alt="Dibujo">
-                <img class="zooImg" src="./Media/s5.jpeg" alt="Música">
-                <img class="zooImg" src="./Media/s7.jpeg" alt="Volleyball">
-                <img class="zooImg" src="./Media/s9.jpeg" alt="Historia">
+            <div class="bottom-right">								
+                <div class="switch">
+                    <div class="circle"></div>
+                </div>									
             </div>
-            <br>
-            <div class="cardInfo column">Me gustan muchas cosas bastante variadas; particularmente tengo un gran gusto por la programación, las matemáticas, el dibujo y cabe mencionar que tengo un gran deseo de aprender robótica, aunque lastimosamente no tengo el placer de conocer mucho sobre esa área, pero espero hacerlo pronto.
-            <br>Entre algunas otras cosas podría mencionar también la música (no puedo tocar ningún instrumento, pero toda la lógica y teoría detrás de el funcionamiento de ella me parece un tema excepcional), también dentro de mis intereses en cuanto a deportes podría mencionar que me llama mucho la atención el basketball, el volleyball y en una mucho menor proporción, el fútbol (soccer).<br>
-            <br>También me veo muy atraído por temas como el universo, la física, historia, y muchas otras áreas de las ciencias que estudian el funcionamiento de nuestro mundo y universo, así como también aquellas que indagan en nuestro pasado y buscan explorar nuevos horizontes.</div>
-            <div class="right-images1 column">
-                <img class="zooImg" src="./Media/s2.jpeg" alt="Matemáticas">
-                <img class="zooImg" src="./Media/s4.jpeg" alt="Robótica">
-                <img class="zooImg" src="./Media/s6.jpeg" alt="Basketball">
-                <img class="zooImg" src="./Media/s8.jpeg" alt="Universo observable">
+            <div class="section">
+                <div class="hero-center-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="img-wrap">
+                                    <img src="./Media/s1.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-center-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="img-wrap">
+                                    <img src="./Media/s2.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-center-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="img-wrap">
+                                    <img src="./Media/s3.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-center-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="img-wrap">
+                                    <img src="./Media/s4.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-center-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="img-wrap">
+                                    <img src="./Media/s5.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-center-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="img-wrap">
+                                    <img src="./Media/s6.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-center-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="img-wrap">
+                                    <img src="./Media/s7.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-center-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="img-wrap">
+                                    <img src="./Media/s8.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-center-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="img-wrap">
+                                    <img src="./Media/s9.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section padding-top-bottom over-hide z-bigger">
+                    <ul class="slide-buttons">
+                        <li class="">
+                            <a href="#0" class="hover-target" data-hover="programación">programación</a>
+                        </li>
+                        <li class="">
+                            <a href="#0" class="hover-target" data-hover="matemática">matemática</a>
+                        </li>
+                        <li class="">
+                            <a href="#0" class="hover-target" data-hover="dibujo">dibujo</a>
+                        </li>
+                        <li class="">
+                            <a href="#0" class="hover-target" data-hover="robótica">robótica</a>
+                        </li>
+                        <li class="">
+                            <a href="#0" class="hover-target" data-hover="música">música</a>
+                        </li>
+                        <li class="">
+                            <a href="#0" class="hover-target" data-hover="basketball">basketball</a>
+                        </li>
+                        <li class="">
+                            <a href="#0" class="hover-target" data-hover="volleyball">volleyball</a>
+                        </li>
+                        <li class="">
+                            <a href="#0" class="hover-target" data-hover="astronomía">astronomía</a>
+                        </li>
+                        <li class="">
+                            <a href="#0" class="hover-target" data-hover="historia">historia</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
+            <script>
+                $('.zoo-item').ZooMove({   
+                cursor:'false',
+                scale:'1.1',
+                move:'false',
+                over:'true',
+                autosize:'true'
+                });
+            </script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+            <script>
+                $(".switch").on('click', function () {
+                    if ($("body").hasClass("spanish")) {
+                        $(".switch").addClass("switched");
+                        $("body").removeClass("spanish");
+                        $("body").addClass("english");
+                        $(".pInfoTitle").html("Who am I?");
+                        $(".pInfo").html("I am Mauricio Salvador Aquino Navas, a guy who is interested in learning new things every day and always looking forward to self-improvement. I am someone who strives to give his best in every area I am in, I always try to help those who need it and motivate them to keep going.");
+                        $("#nav1").html("Introduction");
+                        $("#nav2").html("Programming");
+                        $("#nav3").html("Drawings");
+                        $(".slide-buttons li:nth-child(1)").html("<a href='#0' class='hover-target' data-hover='programming'>programming</a>");
+                        $(".slide-buttons li:nth-child(2)").html("<a href='#0' class='hover-target' data-hover='math'>math</a>");                        
+                        $(".slide-buttons li:nth-child(3)").html("<a href='#0' class='hover-target' data-hover='drawing'>drawing</a>");
+                        $(".slide-buttons li:nth-child(4)").html("<a href='#0' class='hover-target' data-hover='robotic'>robotic</a>");
+                        $(".slide-buttons li:nth-child(5)").html("<a href='#0' class='hover-target' data-hover='music'>music</a>");
+                        $(".slide-buttons li:nth-child(8)").html("<a href='#0' class='hover-target' data-hover='astronomy'>astronomy</a>");
+                        $(".slide-buttons li:nth-child(9)").html("<a href='#0' class='hover-target' data-hover='history'>history</a>");
+                        $(".cardTitles").html("What are my interests?");
+                        $("title").html("Introduction");
+                    }
+                    else {
+                        $("body").addClass("spanish");
+                        $("body").removeClass("english");
+                        $("title").html("Inicio");
+                        $(".pInfoTitle").html("¿Quién soy yo?");
+                        $(".pInfo").html("Soy Mauricio Salvador Aquino Navas, un chico muy interesado en aprender nuevas cosas cada día y siempre seguir adelante buscando la autosuperación. Soy alguien que se esfuerza por dar el máximo en todas las áreas en las que me encuentro, siempre busco ayudar a los que lo necesitan y también motivarlos a seguir adelante.");
+                        $("#nav1").html("Inicio");
+                        $("#nav2").html("Programación");
+                        $("#nav3").html("Dibujos");
+                        $(".cardTitles").html("¿Qué intereses tengo?");
+                        $(".slide-buttons li:nth-child(1)").html("<a href='#0' class='hover-target' data-hover='programación'>programación</a>");
+                        $(".slide-buttons li:nth-child(2)").html("<a href='#0' class='hover-target' data-hover='matemáticas'>matemáticas</a>");                        
+                        $(".slide-buttons li:nth-child(3)").html("<a href='#0' class='hover-target' data-hover='dibujo'>dibujo</a>");
+                        $(".slide-buttons li:nth-child(4)").html("<a href='#0' class='hover-target' data-hover='robótica'>robótica</a>");
+                        $(".slide-buttons li:nth-child(5)").html("<a href='#0' class='hover-target' data-hover='música'>música</a>");
+                        $(".slide-buttons li:nth-child(8)").html("<a href='#0' class='hover-target' data-hover='astronomía'>astronomía</a>");
+                        $(".slide-buttons li:nth-child(9)").html("<a href='#0' class='hover-target' data-hover='historia'>historia</a>");
+                        $(".switch").removeClass("switched");
+                    }
+                });
+                $(document).ready(function() {	
+                    
+                    /* Hero Case study images */			
+                    
+                    $('.slide-buttons li:nth-child(1)').on('mouseenter', function() {
+                        $('.slide-buttons li.active').removeClass('active');
+                        $('.hero-center-section.show').removeClass("show");
+                        $('.hero-center-section:nth-child(1)').addClass("show");
+                        $('.slide-buttons li:nth-child(1)').addClass('active');
+                    })
+                    $('.slide-buttons li:nth-child(2)').on('mouseenter', function() {
+                        $('.slide-buttons li.active').removeClass('active');
+                        $('.hero-center-section.show').removeClass("show");
+                        $('.hero-center-section:nth-child(2)').addClass("show");
+                        $('.slide-buttons li:nth-child(2)').addClass('active');
+                    })
+                    $('.slide-buttons li:nth-child(3)').on('mouseenter', function() {
+                        $('.slide-buttons li.active').removeClass('active');
+                        $('.hero-center-section.show').removeClass("show");
+                        $('.hero-center-section:nth-child(3)').addClass("show");
+                        $('.slide-buttons li:nth-child(3)').addClass('active');
+                    })
+                    $('.slide-buttons li:nth-child(4)').on('mouseenter', function() {
+                        $('.slide-buttons li.active').removeClass('active');
+                        $('.hero-center-section.show').removeClass("show");
+                        $('.hero-center-section:nth-child(4)').addClass("show");
+                        $('.slide-buttons li:nth-child(4)').addClass('active');
+                    })
+                    $('.slide-buttons li:nth-child(5)').on('mouseenter', function() {
+                        $('.slide-buttons li.active').removeClass('active');
+                        $('.hero-center-section.show').removeClass("show");
+                        $('.hero-center-section:nth-child(5)').addClass("show");
+                        $('.slide-buttons li:nth-child(5)').addClass('active');
+                    })
+                    $('.slide-buttons li:nth-child(6)').on('mouseenter', function() {
+                        $('.slide-buttons li.active').removeClass('active');
+                        $('.hero-center-section.show').removeClass("show");
+                        $('.hero-center-section:nth-child(6)').addClass("show");
+                        $('.slide-buttons li:nth-child(6)').addClass('active');
+                    })
+                    $('.slide-buttons li:nth-child(7)').on('mouseenter', function() {
+                        $('.slide-buttons li.active').removeClass('active');
+                        $('.hero-center-section.show').removeClass("show");
+                        $('.hero-center-section:nth-child(7)').addClass("show");
+                        $('.slide-buttons li:nth-child(7)').addClass('active');
+                    })
+                    $('.slide-buttons li:nth-child(8)').on('mouseenter', function() {
+                        $('.slide-buttons li.active').removeClass('active');
+                        $('.hero-center-section.show').removeClass("show");
+                        $('.hero-center-section:nth-child(8)').addClass("show");
+                        $('.slide-buttons li:nth-child(8)').addClass('active');
+                    })
+                    $('.slide-buttons li:nth-child(9)').on('mouseenter', function() {
+                        $('.slide-buttons li.active').removeClass('active');
+                        $('.hero-center-section.show').removeClass("show");
+                        $('.hero-center-section:nth-child(9)').addClass("show");
+                        $('.slide-buttons li:nth-child(9)').addClass('active');
+                    })
+                    $('.slide-buttons li:nth-child(1)').trigger('mouseenter')   
+                    
+                });
+            </script>
         <div class="footer">Mauricio Aquino
-            <br>Main developer © 
+            <br>Main developer © <br>
+            <a href="https://wa.me/50370005233"><img id="ws" src="./Media/Ws.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/mauricio-aquino-228a2b204"><img id="link" src="./Media/Link.png" alt=""></a>
+            <a href="mailto:mauricio.aquino2021@adoc.superate.org.sv"><img id="out" src="./Media/Out.png" alt=""></a>
         </div>
-        <script>
-            $('.zoo-item').ZooMove({   
-            cursor:'false',
-            scale:'1.1',
-            move:'false',
-            over:'true',
-            autosize:'true'
-            });
-        </script>
     </body>
 </html>
